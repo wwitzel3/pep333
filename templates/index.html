@@ -1,0 +1,29 @@
+<html>
+	<body>
+		<form method='get' action='pinto.py'>
+			<label for='age'>Age</label>
+			<input name='age' type='text' />
+
+			<label for='name'>Name</label>
+			<input name='name' type='text' />
+
+			<ul>
+				<li><input name='cb' type='checkbox' value='yes'>Yes</input>
+				<li><input name='cb' type='checkbox' value='no'>No</input>
+			</ul>
+			<input type='submit' value='Submit' />
+		</form>
+
+		<p>
+		<ul>
+			<li>Age: ${age}</li>
+			<li>Name: ${name}</li>
+			<ul>
+				% for c in cb:
+				<li>${c}</li>
+				% endfor
+			</ul>
+		</ul>
+	</body>
+</html>
+
