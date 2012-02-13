@@ -1,0 +1,7 @@
+About
+=====
+
+Random useless code that implements the WSGI specification as defined in PEP333.
+This is nothing more than tinkering and I highly reccomend that you do not download
+this and attempt to use it for anything serious.
+
